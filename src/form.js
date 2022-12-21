@@ -30,6 +30,11 @@ const Form = ({ input, todo, setInput, setTodo, editodo, setEditTodo }) => {
   return (
     <div className="box">
       <form onSubmit={todoChangefunction}>
+        <h5>
+          {editodo
+            ? "Enter Updated form of Work Hear to update."
+            : "Enter New Work hear."}
+        </h5>
         <input
           type="text"
           placeholder={
